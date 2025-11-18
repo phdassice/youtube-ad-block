@@ -7,19 +7,20 @@
 ---
 
 ## 快速開始（1 分鐘上手）
-1. 安裝 uBlock Origin  
+1. 安裝 uBlock Origin（主建議）
    - Chrome / Chromium: 在 Chrome Web Store 安裝 uBlock Origin  
      https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm
    - Firefox: 在 Firefox Add-ons 搜尋 uBlock Origin
 
-2. 開啟 uBlock Origin 的 Dashboard（過濾器管理）
-   - 在網址列輸入（或在新分頁開啟）：
-     chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm/dashboard.html#1p-filters.html
-
-   或：擴充功能圖示 → 點選設定（齒輪）→ 進入 Dashboard → 「My filters / 自訂過濾器」
+2. 若有人無法使用上方版本，使用備用的「uBlock Origin Lite」
+   - 備用擴充： https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh
+   - 兩個擴充的 Dashboard 位置通常類似，你可以用下面其中一個（把 <extension-id> 換成上面對應的 id）：
+     - chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm/dashboard.html#1p-filters.html
+     - chrome-extension://ddkjiahejlhfcafbddmgiahcphecmpfh/dashboard.html#1p-filters.html
+   - 或透過擴充功能圖示 → 設定（齒輪）→ Dashboard → 「My filters / 自訂過濾器」
 
 3. 匯入本專案的過濾規則  
-   - 開啟本專案中的 `Youtube AD block.txt`（或直接在本 repo 找到相應規則檔）  
+   - 開啟本專案中的 `Youtube AD block.txt`（或在 repo 找到相應規則檔）  
    - 將內容複製貼到 uBlock Origin 的「我的過濾器（My filters）」區塊 → 按下「套用變更（Apply changes）」
 
 4. 完成，重新載入 YouTube 頁面確認廣告是否被攔截。
