@@ -1,12 +1,65 @@
 # youtube-ad-block
-這是一個Youtube廣告的攔截腳本<br>
-他需要配合https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?pli=1 這個插件<br>
-然後在網址列上打上<br>chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm/dashboard.html#1p-filters.html<br>然後把Youtube AD block.txt裡面的代碼貼上去然後按下套用變更<br>
-這樣就完成了<br>
-如果覺得這個很棒請幫我按星星，有任何問題歡迎在lssues提問<br>
-祝你們使用愉快<br>
-<br>
-# 可以攔截的廣告服務
-- youtube全部影片
-- Youtube music
-# 若因為使用此腳本帳號被封鎖我不會負責，請您思考後再使用
+
+輕量的 YouTube 廣告攔截濾鏡（供 uBlock Origin 使用）
+
+這個專案提供一組 uBlock Origin 的自訂過濾規則，用來在 YouTube（含 YouTube Music）上攔截廣告。配合瀏覽器擴充套件 uBlock Origin 使用即可生效。
+
+---
+
+## 快速開始（1 分鐘上手）
+1. 安裝 uBlock Origin  
+   - Chrome / Chromium: 在 Chrome Web Store 安裝 uBlock Origin  
+     https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm
+   - Firefox: 在 Firefox Add-ons 搜尋 uBlock Origin
+
+2. 開啟 uBlock Origin 的 Dashboard（過濾器管理）
+   - 在網址列輸入（或在新分頁開啟）：
+     chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm/dashboard.html#1p-filters.html
+
+   或：擴充功能圖示 → 點選設定（齒輪）→ 進入 Dashboard → 「My filters / 自訂過濾器」
+
+3. 匯入本專案的過濾規則  
+   - 開啟本專案中的 `Youtube AD block.txt`（或直接在本 repo 找到相應規則檔）  
+   - 將內容複製貼到 uBlock Origin 的「我的過濾器（My filters）」區塊 → 按下「套用變更（Apply changes）」
+
+4. 完成，重新載入 YouTube 頁面確認廣告是否被攔截。
+
+---
+
+## 支援範圍
+- YouTube（影片內廣告、片前廣告等）  
+- YouTube Music
+
+---
+
+## 使用注意與責任聲明
+- 使用過濾規則有可能改變 YouTube 的某些功能或顯示行為。  
+- 若因使用本過濾規則導致帳號被封或其他不可預期的後果，作者不負任何責任。請自行評估風險後再使用。  
+- 若遇到問題、誤判或想新增規則，歡迎在本倉庫開 Issue。
+
+---
+
+## 常見問題（FAQ）
+Q: 為什麼有時候還會看到廣告？  
+A: YouTube 會不時改變廣告投放或版面，過濾規則需要更新。請確認你已貼上最新的規則並重新整理頁面。
+
+Q: 我如何回復為原本狀態？  
+A: 移除 uBlock Origin 中「我的過濾器」裡貼上的規則，按下「套用變更」並重新整理 YouTube。
+
+---
+
+## 想要貢獻或回報
+- 如果你發現規則失效、誤判或有改進建議，請在本 repo 開 Issue 或提 Pull Request。  
+- 建議在 PR 中描述測試步驟與環境（瀏覽器、版本、是否有其他擴充套件等）。
+
+---
+
+## 授權與版權
+- 如果你希望本專案有明確授權，請在倉庫新增 LICENSE 檔案（例如 MIT、Apache-2.0 等）。目前 README 並未指定授權，請視情況補上。
+
+---
+
+## 聯絡與給作者支持
+如果你覺得本工具有用，請幫忙按個 Star ⭐。若有問題或建議，歡迎在 Issues 提問 — 我會盡量回覆。
+
+祝使用愉快！
